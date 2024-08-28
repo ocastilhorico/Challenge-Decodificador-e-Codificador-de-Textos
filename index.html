@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Decodificador de Textos</title>
+    <link rel="stylesheet" href="./styles/style.css">
+</head>
+<body>
+    <header class="cabecalho">
+        <nav class="cabecalho__menu">
+            <a href="http://www.alura.com.br"><img src="assets/logo-alura.png"  alt="logo logo-alura"></a>
+            <a class="cabecalho__menu__link">Desafio Alura + Oracle One</a>
+        </nav>
+    </header>
+    <main class="apresentacao">
+        <section class="decodificador__input">
+            <textarea id="input-texto" placeholder="Digite ou cole seu texto aqui..."></textarea>
+            <div class="decodificador__principal__titulo__alerta"><svg xmlns="http://www.w3.org/2000/svg" width="30" height="20" fill="currentColor" class="bi bi-exclamation-circle-fill" viewBox="0 0 16 16">
+                <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0M8 4a.905.905 0 0 0-.9.995l.35 3.507a.552.552 0 0 0 1.1 0l.35-3.507A.905.905 0 0 0 8 4m.002 6a1 1 0 1 0 0 2 1 1 0 0 0 0-2"/>
+              </svg></i>Apenas letras Maiusculas e sem acento!
+            </div>
+            <div class="decodificador__botoes">
+                <button onclick="criptografar()" class="decodificador__botoes__link">
+                    Criptografar
+                </button>
+                <button onclick="descriptografar()" class="decodificador__botoes__link">
+                    Descriptografar
+                </button>     
+            </div>
+        </section>
+        <section>
+            <div id="output">
+                <img src="assets/Img.svg"alt="Procurando_com_Lupa">                
+                <h2>Sua mensagem aparecerá aqui!</h2>
+                <span>Digite um texto que deseja criptografar ou descriptografar.</span>
+            </div>
+            </div>
+        </section>   
+     </main>
+     <footer class="rodape">
+        <div class="icones">
+            <a href=""><ion-icon name="logo-linkedin"></ion-icon></a>
+            <a href=""><ion-icon name="logo-instagram"></ion-icon></a>
+            <a href=""><ion-icon name="logo-github"></ion-icon></a>
+
+        </div>
+        <p>Desenvolvido por Victor Castilho</p>
+    </footer>
+
+    <script src="./scripts/script.js"></script>
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+</body>
+
+</html>
+
+     
